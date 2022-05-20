@@ -1,0 +1,135 @@
+#Ninja Drawing Capstone
+pen.move(DOWN)
+drivetrain.set_drive_velocity(100, PERCENT)
+drivetrain.set_turn_velocity(100, PERCENT)
+
+#Main Body
+
+drivetrain.drive_for(FORWARD, -200, MM)
+drivetrain.turn_for(RIGHT, 200, DEGREES)
+drivetrain.drive_for(FORWARD, 150, MM)
+drivetrain.turn_for(RIGHT, 35, DEGREES)
+drivetrain.drive_for(FORWARD, 100, MM)
+drivetrain.turn_for(LEFT, 80, DEGREES)
+drivetrain.drive_for(FORWARD, 200, MM)
+drivetrain.turn_for(LEFT, 140, DEGREES)
+drivetrain.drive_for(FORWARD, 110, MM)
+drivetrain.turn_for(RIGHT, 90, DEGREES)
+drivetrain.drive_for(FORWARD, -30, MM)
+drivetrain.drive_for(FORWARD, 120, MM)
+drivetrain.turn_for(RIGHT, 30, DEGREES)
+drivetrain.drive_for(FORWARD, 140, MM)
+drivetrain.turn_for(LEFT, 140, DEGREES)
+drivetrain.drive_for(FORWARD, 275, MM)
+drivetrain.turn_for(RIGHT, 90, DEGREES)
+drivetrain.drive_for(FORWARD, -20, MM)
+drivetrain.drive_for(FORWARD, 170, MM)
+
+pen.move(UP)
+
+drivetrain.turn_for(LEFT, 90, DEGREES)
+drivetrain.drive_for(FORWARD, 60, MM)
+
+pen.move(DOWN)
+
+drivetrain.turn_for(LEFT, 60, DEGREES)
+drivetrain.drive_for(FORWARD, 100, MM)
+
+#circle
+drivetrain.turn_for(LEFT, 50, DEGREES)
+
+for value in range(20):
+    wait(5, MSEC)
+    drivetrain.drive_for(FORWARD, 50, MM)
+    drivetrain.turn_for(RIGHT, 18, DEGREES)
+
+#Hand 1
+pen.move(UP)
+drivetrain.turn_for(LEFT, 134, DEGREES)
+drivetrain.drive_for(FORWARD,110, MM)
+
+pen.move(DOWN)
+
+for value in range(20):
+    wait(5, MSEC)
+    drivetrain.drive_for(FORWARD, 10, MM)
+    drivetrain.turn_for(RIGHT, 18, DEGREES)
+
+pen.move(UP)
+
+drivetrain.turn_for(RIGHT, 173, DEGREES)
+drivetrain.drive_for(FORWARD, 305, MM)
+
+#Second arm
+drivetrain.turn_for(LEFT, 35, DEGREES)
+pen.move(DOWN)
+drivetrain.drive_for(FORWARD, 120, MM)
+pen.move(UP)
+drivetrain.turn_for(LEFT, 50, DEGREES)
+drivetrain.drive_for(FORWARD, 60, MM)
+drivetrain.turn_for(LEFT, 110, DEGREES)
+pen.move(DOWN)
+drivetrain.drive_for(FORWARD, 90, MM)
+pen.move(UP)
+
+#hand 2
+drivetrain.drive_for(FORWARD, -90, MM)
+brain.print("VEXcode")
+
+pen.move(DOWN)
+for value in range(20):
+    wait(5, MSEC)
+    drivetrain.drive_for(FORWARD, -8, MM)
+    drivetrain.turn_for(RIGHT, 18, DEGREES)
+
+pen.move(UP)
+
+#face
+drivetrain.turn_for(LEFT, 69, DEGREES)
+drivetrain.drive_for(FORWARD, 165, MM)
+pen.move(DOWN)
+drivetrain.turn_for(RIGHT, 45, DEGREES)
+drivetrain.drive_for(FORWARD, 175, MM)
+drivetrain.turn_for(RIGHT, 20, DEGREES)
+drivetrain.drive_for(FORWARD, 160, MM)
+
+drivetrain.turn_for(RIGHT, 70, DEGREES)
+pen.move(UP)
+drivetrain.drive_for(FORWARD, 100, MM)
+drivetrain.turn_for(RIGHT, 120, DEGREES)
+pen.move(DOWN)
+drivetrain.drive_for(FORWARD, 340, MM)
+
+pen.move(UP)
+drivetrain.turn_for(RIGHT, 165, DEGREES)
+drivetrain.drive_for(FORWARD, 120, MM)
+
+pen.move(DOWN)
+
+for value in range(20):
+    wait(5, MSEC)
+    drivetrain.drive_for(FORWARD, 4, MM)
+    drivetrain.turn_for(RIGHT, 18, DEGREES)
+drivetrain.turn_for(LEFT, 130, DEGREES)
+drivetrain.drive_for(FORWARD, 20, MM)
+
+pen.move(UP)
+drivetrain.turn_for(RIGHT, 130, DEGREES)
+drivetrain.drive_for(FORWARD, 15, MM)
+
+drivetrain.turn_for(RIGHT, 10, DEGREES)
+drivetrain.drive_for(FORWARD, 90, MM)
+
+pen.move(DOWN)
+
+for value in range(20):
+    wait(5, MSEC)
+    drivetrain.drive_for(FORWARD, 4, MM)
+    drivetrain.turn_for(RIGHT, 18, DEGREES)
+drivetrain.turn_for(LEFT, 130, DEGREES)
+drivetrain.drive_for(FORWARD, 20, MM)
+
+pen.move(UP)
+
+drivetrain.turn_for(RIGHT, 45, DEGREES)
+drivetrain.drive_for(FORWARD, -1000, MM)
